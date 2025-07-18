@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おおなかブルーベリー農園</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>おおなかブルーベリー農園</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">農園について</a></li>
+                <li><a href="#products">商品のご案内</a></li>
+                <li><a href="#order">ご注文</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <h2>太陽をたっぷり浴びた、甘くて美味しいブルーベリー</h2>
+                <p>一粒一粒、心を込めて育てました。自然の恵みをお届けします。</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>農園について</h2>
+            <p>
+                おおなかブルーベリー農園へようこそ。私たちは、澄んだ空気と豊かな自然に囲まれたこの場所で、長年にわたりブルーベリー栽培を続けています。<br>
+                化学肥料を極力使わず、自然本来の力を活かした栽培方法で、どなたにも安心してお召し上がりいただけるブルーベリー作りを心がけています。
+            </p>
+        </section>
+
+        <section id="products">
+            <h2>商品のご案内</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <h3>朝摘みブルーベリー 100g</h3>
+                    <p class="price">350円 (税込)</p>
+                    <p>お試しにちょうど良いサイズ。ヨーグルトやデザートのトッピングに最適です。</p>
+                </div>
+                <div class="product-item">
+                    <h3>朝摘みブルーベリー 500g</h3>
+                    <p class="price">1,500円 (税込)</p>
+                    <p>ご家族で楽しめるたっぷりサイズ。ジャム作りにもおすすめです。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>ご注文フォーム</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">郵便番号 (ハイフンなし)</label>
+                    <div class="postal-code-lookup">
+                        <input type="text" id="postal-code" name="postal-code" placeholder="例: 1000001" required>
+                        <button type="button" id="lookup-btn">住所自動入力</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">ご住所</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="product">ご希望の商品</label>
+                    <select id="product" name="product">
+                        <option value="100g">朝摘みブルーベリー 100g (350円)</option>
+                        <option value="500g">朝摘みブルーベリー 500g (1,500円)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">数量</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                </div>
+                <button type="submit">注文を確定する</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 おおなかブルーベリー農園. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

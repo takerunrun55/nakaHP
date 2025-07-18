@@ -1,0 +1,161 @@
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+header {
+    background-color: #4a69bd;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#hero {
+    background-image: url('https://images.unsplash.com/photo-1598506223321-c1a03c953b49?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 8px;
+}
+
+#hero .hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=1972&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    margin: -2rem -2rem 1.5rem -2rem; /* Adjust margins to extend to the edges of the section */
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.product-item {
+    text-align: center;
+    width: 45%;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+#order-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#order-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#order-form input, 
+#order-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding */
+}
+
+.postal-code-lookup {
+    display: flex;
+    gap: 10px;
+}
+
+.postal-code-lookup input {
+    flex-grow: 1;
+}
+
+#lookup-btn, button[type="submit"] {
+    background-color: #4a69bd;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#lookup-btn:hover, button[type="submit"]:hover {
+    background-color: #3b5998;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    background-color: #333;
+    color: white;
+}
